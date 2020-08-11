@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Check",
+    "slug": "Check",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/icon.png",
+    "splash": {
+      "image": "./app/assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#63c5da"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "android": {
+      "package": "com.alanflynn.Check"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "description": "An app with a checklist fire safety compliance.",
+    "githubUrl": "https://github.com/hollocaine/firesafe"
+  }
+}
