@@ -9,8 +9,7 @@ function AppFormField({ name, width, date, ...otherProps }) {
   const [hasArr, setHasArr] = useState(false);
   const [dataArr, setDataArr] = useState([{}]);
   useEffect(() => {
-    if (typeof otherProps.value === 'object') {
-      //console.log(otherProps);
+    if (typeof otherProps.values === 'object') {
       setHasArr(true);
     }
   }, []);
@@ -40,7 +39,7 @@ function AppFormField({ name, width, date, ...otherProps }) {
             const question = {
               question: text,
             };
-            setFieldValue({ questions: [setDataArr(...name), question] });
+            values = { questions: [setDataArr(...name), question] };
           }}
           date={date}
           width={width}

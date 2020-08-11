@@ -79,7 +79,7 @@ function QuestionsEditScreen({ navigation, route }) {
                 maxLength={255}
                 name={'question[' + idx + ']'}
                 placeholder="Question"
-                value={[{ value }]}
+                values={[{ value }]}
                 onChangeText={(e) => handleChange(idx, e)}
               />
               <MaterialCommunityIcons
